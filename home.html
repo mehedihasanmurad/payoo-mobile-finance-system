@@ -4,8 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payoo Home Page</title>
+    <!-- Daisy Ui Link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <h1>Payoo Home Page</h1>
+    <main class="flex justify-center">
+        <div class="mockup-phone bg-base-300">
+            <div class="mockup-phone-camera"></div>
+            <div class="mockup-phone-display grid place-content-center">
+                <!-- available balance part starts  -->
+                <div class="stats shadow bg-base-100 max-w-52 mx-auto">
+                    <div class="stat text-center">
+                        <div class="stat-value"><span id="account-balance">9400</span></div>
+                        <div class="stat-desc">last month</div>
+                    </div>
+                </div>
+                <!-- available balance part ends  -->
+                
+                <div class="divider"></div>
+                <!-- add money and cash out part starts-->
+                <div class="max-w-52 mx-auto">
+                    <button class="btn">Add Money</button>
+                    <button class="btn">Cash Out</button>
+                </div>
+                <!-- add money and cash out ends -->
+                <div class="divider w-80"></div>
+
+                <!-- Add Money Login starts -->
+                <div class="card bg-base-100">
+                    <div class="card-body">
+                        <fieldset class="fieldset">
+                            <label class="label font-extrabold ml-2 text-black">Amount</label>
+                            <input id="input-amount-money" type="email" class="input  rounded-full" placeholder="Enter Amount" />
+                            <label class="label font-extrabold ml-2 text-black">Password</label>
+                            <input id="input-pin-number" type="password" class="input rounded-full" placeholder="Password" />
+                            <button id="btn-add-money" class="btn bg-[#0874F2] mt-4 text-white rounded-full ml-2">Add Money</button>
+                        </fieldset>
+                    </div>
+                </div>
+                <!-- Add Money Login ends -->
+            </div>
+        </div>
+
+        <script src="js/home.js"></script>
+    </main>
 </body>
 </html>
