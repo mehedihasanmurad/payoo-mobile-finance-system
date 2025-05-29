@@ -32,10 +32,10 @@
                 <div class="divider w-80"></div>
 
                 <!-- Add Money Login starts -->
-                <div class="card bg-base-100">
+                <div class="card bg-base-100 hidden">
                     <div class="card-body">
                         <fieldset class="fieldset">
-                            <label class="label font-extrabold ml-2 text-black">Amount</label>
+                            <label class="label font-extrabold ml-2 text-black">Add Money Amount</label>
                             <input id="input-amount-money" type="email" class="input  rounded-full" placeholder="Enter Amount" />
                             <label class="label font-extrabold ml-2 text-black">Password</label>
                             <input id="input-pin-number" type="password" class="input rounded-full" placeholder="Password" />
@@ -44,10 +44,25 @@
                     </div>
                 </div>
                 <!-- Add Money Login ends -->
+
+                <!-- Cash Out Login starts -->
+                <div class="card bg-base-100">
+                    <div class="card-body">
+                        <fieldset class="fieldset">
+                            <label class="label font-extrabold ml-2 text-black">Cash Out Amount</label>
+                            <input id="input-cash-out-money" type="email" class="input  rounded-full" placeholder="Enter Cash Out Amount" />
+                            <label class="label font-extrabold ml-2 text-black">Password</label>
+                            <input id="input-cash-out-pin" type="password" class="input rounded-full" placeholder="Password" />
+                            <button id="btn-cash-out" class="btn bg-[#0874F2] mt-4 text-white rounded-full ml-2">Cash Out</button>
+                        </fieldset>
+                    </div>
+                </div>
+                <!-- Cash Out Login ends -->
             </div>
         </div>
 
         <script src="js/home.js"></script>
+        <script src="js/cashOut.js"></script>
     </main>
 </body>
 </html>
