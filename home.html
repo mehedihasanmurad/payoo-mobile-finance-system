@@ -25,14 +25,14 @@
                 <div class="divider"></div>
                 <!-- add money and cash out part starts-->
                 <div class="max-w-52 mx-auto">
-                    <button class="btn">Add Money</button>
-                    <button class="btn">Cash Out</button>
+                    <button id="btn-show-add-money" class="btn">Add Money</button>
+                    <button id="btn-show-cash-out-money" class="btn">Cash Out</button>
                 </div>
                 <!-- add money and cash out ends -->
                 <div class="divider w-80"></div>
 
                 <!-- Add Money Login starts -->
-                <div class="card bg-base-100 hidden">
+                <div id="add-money-form" class="card bg-base-100">
                     <div class="card-body">
                         <fieldset class="fieldset">
                             <label class="label font-extrabold ml-2 text-black">Add Money Amount</label>
@@ -46,7 +46,7 @@
                 <!-- Add Money Login ends -->
 
                 <!-- Cash Out Login starts -->
-                <div class="card bg-base-100">
+                <div id="cash-out-form" class="hidden card bg-base-100">
                     <div class="card-body">
                         <fieldset class="fieldset">
                             <label class="label font-extrabold ml-2 text-black">Cash Out Amount</label>
@@ -63,6 +63,7 @@
 
         <script src="js/home.js"></script>
         <script src="js/cashOut.js"></script>
+        <script src="js/features.js"></script>
     </main>
 </body>
 </html>
