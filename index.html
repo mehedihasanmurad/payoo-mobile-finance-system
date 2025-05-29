@@ -12,13 +12,35 @@
 
 <body>
     <main class="flex justify-center">
-        <div class="mockup-phone">
+        <div class="mockup-phone bg-base-300">
             <div class="mockup-phone-camera"></div>
             <div class="mockup-phone-display text-white grid place-content-center">
+
                 <!-- log in er kaj -->
+                <div class="hero bg-base-100 rounded-lg">
+                    <div class="hero-content flex-col lg:flex-row-reverse">
+                        
+                        <div class="card w-full max-w-sm shrink-0 ">
+                            <div class="card-body text-black">
+                                <fieldset class="fieldset">
+                                    <label class="label font-extrabold ml-2">Mobile Number</label>
+                                    <input type="email" class="input rounded-full" placeholder="Enter Your Phone" />
+                                    <label class="label font-extrabold ml-2">4 Digit Pin</label>
+                                    <input type="password" class="input rounded-full" placeholder="Enter 4 Digit Pin" />
+                                    <div><a class="link link-hover ml-2">Forgot password?</a></div>
+                                    <button class="btn bg-[#0874F2] text-white rounded-full mt-4">Login</button>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </main>
+
+    <!-- internal js -->
+    <script src="js/login.js"></script>
 </body>
 
 </html>
